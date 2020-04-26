@@ -1,67 +1,26 @@
 /*=============================
 =            FONTS            =
 =============================*/
+/** Light */
 @font-face {
     font-family: "SF Display";
-    font-weight: 900;
-    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
-  }
-  
-  /** Bold */
-  @font-face {
-    font-family: "SF Display";
-    font-weight: 700;
-    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
-  }
-  
-  /** Heavy */
-  @font-face {
-    font-family: "SF Display";
-    font-weight: 800;
-    src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
-  }
-  
-  /** Light */
-  @font-face {
-    font-family: "SF Display";
     font-weight: 200;
-    src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
-  }
-  
-  /** Medium */
-  @font-face {
+    src: url("./font/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
     font-family: "SF Display";
     font-weight: 500;
-    src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
-  }
-  
-  /** Regular */
-  @font-face {
-    font-family: "SF Display";
-    font-weight: 400;
-    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
-  }
-  
-  /** Semibold */
-  @font-face {
-    font-family: "SF Display";
-    font-weight: 600;
-    src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
-  }
-  
-  /** Thin */
-  @font-face {
+    src: url("./font/SF-UI-Display-Medium.otf");
+}
+
+/** Thin */
+@font-face {
     font-family: "SF Display";
     font-weight: 300;
-    src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
-  }
-  
-  /** Ultralight */
-  @font-face {
-    font-family: "SF Display";
-    font-weight: 100;
-    src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
-  }
+    src: url("./font/SF-UI-Display-Thin.otf");
+}
 
 /*===================================
 =            BASE STYLES            =
@@ -69,9 +28,11 @@
 body {
     font-family: 'SF Display';
 }
+
 section, header, footer, main, article, nav, aside {
     position: relative;
 }
+
 a {
     outline: none !important;
     text-decoration: none !important;
@@ -80,6 +41,7 @@ a {
     transition: all 225ms ease;
     text-decoration: none !important;
 }
+
 .force-gpu * {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -87,6 +49,7 @@ a {
     -o-transform: translateZ(0);
     transform: translateZ(0);
 }
+
 #site-wrap {
     width: 100%;
     overflow: hidden;
@@ -96,6 +59,7 @@ a {
     -moz-transition: all 650ms ease;
     transition: all 650ms ease;
 }
+
 .show-site #site-wrap { opacity: 1; }
 
 /*================================
@@ -112,11 +76,13 @@ a {
     -moz-transition: all 225ms ease;
     transition: all 225ms ease;
 }
+
 .show-nav #site-nav {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0);
 }
+
 #site-nav .navbar-brand i { color: rgb(255, 69, 69); }
 #site-nav a { color: #444; }
 #site-nav a:hover { color: rgb(255, 69, 69); }
@@ -135,6 +101,7 @@ a {
     min-height: 800px;
     margin-bottom: 250px;
 }
+
 #call-to-action h1 {
     position: absolute;
     left: 50%;
@@ -150,21 +117,25 @@ a {
     font-size: 67px;
     font-weight: 200;
 }
+
 #call-to-action .main-text {
     position: absolute;
     left: 0;
     top: 10%;
     width: 100%;
 }
+
 #call-to-action h2 {
     font-size: 92px;
     font-weight: 200;
     margin: 0;
 }
+
 #call-to-action p.lead {
     font-size: 21px;
     font-weight: 400;
 }
+
 #call-to-action .links a {
     font-size: 15px;
     margin: 0 15px;
@@ -176,6 +147,7 @@ a {
     width: 150px;
     letter-spacing: 0.03em;
 }
+
 #call-to-action .zoomed-action {
     position: absolute;
     bottom: 0;
@@ -186,6 +158,7 @@ a {
     -moz-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
 }
+
 #call-to-action .zoomed-action:before {
     position: absolute;
     content: ' ';
@@ -197,6 +170,7 @@ a {
     display: block;
     opacity: 0.3;
 }
+
 #call-to-action .top-part {
     position: absolute;
     display: block;
@@ -209,11 +183,13 @@ a {
     border-radius: 7px 7px 0 0;
     background: rgb(3, 3, 3);
 }
+
 #call-to-action .top-part div {
     position: absolute;
     left: 10px;
     top: 10px;
 }
+
 #call-to-action .top-part i {
     position: absolute;
     left: 50%;
@@ -224,6 +200,7 @@ a {
     color: #828282;
     font-size: 8px;
 }
+
 #call-to-action .bottom-part {
     position: absolute;
     display: block;
@@ -236,6 +213,7 @@ a {
     border-radius: 0 0 7px 7px;
     background: rgb(208, 208, 208);
 }
+
 #call-to-action .bottom-part i {
     position: absolute;
     left: 50%;
@@ -245,6 +223,7 @@ a {
     transform: translate(-50%, -50%);
     font-size: 28px;
 }
+
 #call-to-action .zoomed-action img {
     width: 100%;
     height: auto;
@@ -259,15 +238,18 @@ a {
 .info-group {
     margin-bottom: 250px;
 }
+
 .info-group h2 {
     margin-top: 0;
     font-size: 70px;
     line-height: 65px;
     margin-bottom: 30px;
 }
+
 .info-group h2 span {
     display: block;
 }
+
 .info-group h2 span.first { font-weight: 200; }
 .info-group h2 span.second { font-weight: 300; }
 .info-group h2 span.third { font-weight: 600; }
@@ -278,9 +260,11 @@ a {
     line-height: 36px;
     margin-bottom: 25px;
 }
+
 .info-group img.tall {
     padding: 0 25px;
 }
+
 .info-group h3 {
     font-size: 40px;
     line-height: 45px;
@@ -297,12 +281,14 @@ a {
 #contact {
     margin-bottom: 100px;
 }
+
 #contact h2 {
     text-align: center;
     font-weight: 200;
     font-size: 70px;
     line-height: 75px;
 }
+
 #contact hr {
     margin-bottom: 50px;
 }
@@ -320,15 +306,18 @@ a {
     -moz-transform: translateY(0);
     transform: translateY(0);
 }
+
 .no-scroll-magic #call-to-action {
     padding: 0 15px;
     height: auto;
     min-height: 0;
 }
+
 #call-to-action .zoomed-action {
     width: 100%;
     max-width: 900px;
 }
+
 .no-scroll-magic #call-to-action .main-text, .no-scroll-magic #call-to-action .zoomed-action, .no-scroll-magic #call-to-action h1  {
     position: relative;
     left: auto;
@@ -340,9 +329,11 @@ a {
     transform: none;
     margin: 0 auto;
 }
+
 .no-scroll-magic #call-to-action .main-text {
     margin: 100px auto 50px;
 }
+
 .no-scroll-magic #call-to-action h1 {
     color: #333;
     margin: 30px auto 90px;
@@ -355,6 +346,7 @@ footer {
     background: rgb(208, 208, 208);
     padding: 300px 0;
 }
+
 footer p {
     font-weight: 200;
     color: #828282;
@@ -370,20 +362,24 @@ footer p {
     #call-to-action h1 {
         font-size: 53px;
     }
+
     .info-group h2 {
         font-size: 51px;
         line-height: 55px;
     }
 }
+
 @media only screen and (max-width : 767px) {
     .info-group h2 span {
         display: inline;
         font-weight: 300 !important;
     }
+
     .info-group p {
         font-size: 22px;
         line-height: 32px;
     }
+
     .info-group h3 { font-weight: 200; }
     .info-group img.tall {
         padding: 0;
@@ -399,19 +395,23 @@ footer p {
         display: block;
         margin: 6px 0;
     }
+
     #call-to-action h1 { font-size: 33px; }
     #call-to-action .top-part { height: 15px; }
     #call-to-action .zoomed-action img { border-width: 15px; }
     #call-to-action .bottom-part { height: 35px; }
     #call-to-action .bottom-part i { font-size: 20px; }
+
     .info-group h2 {
         font-size: 39px;
         line-height: 40px;
     }
+
     .info-group p {
         font-size: 18px;
         line-height: 28px;
     }
+
     #contact h2 { font-size: 57px; }
     footer p { font-size: 40px; }
 }
